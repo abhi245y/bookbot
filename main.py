@@ -15,7 +15,7 @@ if __name__ == "__main__":
         filepath = sys.argv[1]
         print("============ BOOKBOT ============")
         print(f"Analyzing book found at {filepath}...")
-        book_data = get_book_text()
+        book_data = get_book_text(filepath)
         num_words = get_num_words(book_data.split())
         print("----------- Word Count ----------")
         print(f"Found {num_words} total words")
